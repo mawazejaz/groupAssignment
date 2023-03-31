@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Configurations>Debug;Release;TestPublish;StagingPublish;ProductionPublish</Configurations>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ProductionPublish|AnyCPU'">
+    <Optimize>True</Optimize>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='StagingPublish|AnyCPU'">
+    <Optimize>True</Optimize>
+  </PropertyGroup>
+
+ <!--<Target Name="TestPublish" AfterTargets="AfterPublish" Condition="'$(Configuration)'=='TestPublish'">
+    <Delete Files="$(ProjectDir)$(publishUrl)appsettings.Development.json" />
+    <Delete Files="$(ProjectDir)$(publishUrl)appsettings.ProductionPublish.json" />
+    <Delete Files="$(ProjectDir)$(publishUrl)appsettings.StagingPublish.json" />
+    <Message Text="TestPublish"></Message>
+    <Message Text="$(ProjectDir)$(publishUrl)appsettings.TestPublish.json"></Message>
+  </Target>-->
+
+</Project>
