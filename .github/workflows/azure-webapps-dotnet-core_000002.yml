@@ -196,7 +196,7 @@ jobs:
           # working-directory: "./FirstAzureAppTestProject" 
 
         - name: dotnet publish
-          run: dotnet publish -c TestPublish -o ${{env.DOTNET_ROOT}}/myapp
+          run: dotnet publish -c StagingPublish -o ${{env.DOTNET_ROOT}}/myapp
           working-directory: "./MyFirstAzureWebApp" 
 
         - name: Upload artifact for deployment job
@@ -262,7 +262,7 @@ jobs:
           # working-directory: "./FirstAzureAppTestProject" 
 
         - name: dotnet publish
-          run: dotnet publish -c TestPublish -o ${{env.DOTNET_ROOT}}/myapp
+          run: dotnet publish -c ProductionPublish -o ${{env.DOTNET_ROOT}}/myapp
           working-directory: "./MyFirstAzureWebApp" 
 
         - name: Upload artifact for deployment job
