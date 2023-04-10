@@ -54,15 +54,15 @@ jobs:
 
       - name: Build with dotnet 
         run: dotnet build --configuration Release
-        working-directory: "./MyFirstAzureWebApp" # added by BASHARAT
+        working-directory: "./MyFirstAzureWebApp" 
 
-        # - name: Test # added by BASHARAT
-        # run: dotnet test --no-build --verbosity normal # added by BASHARAT
-        # working-directory: "./FirstAzureAppTestProject" # added by BASHARAT
+        # - name: Test 
+        # run: dotnet test --no-build --verbosity normal 
+        # working-directory: "./FirstAzureAppTestProject"
       
       - name: dotnet publish
         run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
-        working-directory: "./MyFirstAzureWebApp" # added by BASHARAT
+        working-directory: "./MyFirstAzureWebApp"
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
@@ -120,15 +120,15 @@ jobs:
 
         - name: Build with dotnet 
           run: dotnet build --configuration TestPublish
-          working-directory: "./MyFirstAzureWebApp" # added by BASHARAT
+          working-directory: "./MyFirstAzureWebApp" 
 
-          # - name: Test # added by BASHARAT
-          # run: dotnet test --no-build --verbosity normal # added by BASHARAT
-          # working-directory: "./FirstAzureAppTestProject" # added by BASHARAT
+          # - name: Test 
+          # run: dotnet test --no-build --verbosity normal 
+          # working-directory: "./FirstAzureAppTestProject" 
 
         - name: dotnet publish
           run: dotnet publish -c TestPublish -o ${{env.DOTNET_ROOT}}/myapp
-          working-directory: "./MyFirstAzureWebApp" # added by BASHARAT
+          working-directory: "./MyFirstAzureWebApp" 
 
         - name: Upload artifact for deployment job
           uses: actions/upload-artifact@v3
