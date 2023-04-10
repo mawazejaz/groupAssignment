@@ -235,7 +235,7 @@ jobs:
             
   build_PROD:
       runs-on: ubuntu-latest
-      needs: deploy_TST
+      needs: deploy_STG
 
       steps:
         - uses: actions/checkout@v3
