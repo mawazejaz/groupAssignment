@@ -164,13 +164,50 @@ jobs:
             app-name: ${{ env.AZURE_WEBAPP_NAME_Test }}
             publish-profile: ${{ secrets.AZURE_PUBLISH_PROFILE_V002_Test }}
             package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
+            
+  build_STG:
+      runs-on: ubuntu-latest
+      needs: deploy_TST
 
+      steps:
+        - uses: actions/checkout@v3
+
+        - name: Set up .NET Core
+          uses: actions/setup-dotnet@v2
+          with:
+            dotnet-version: ${{ env.DOTNET_VERSION }}
+
+        - name: Set up dependency caching for faster builds
+          uses: actions/cache@v3
+          with:
+            path: ~/.nuget/packages
+            key: ${{ runner.os }}-nuget-${{ hashFiles('**/packages.lock.json') }}
+            restore-keys: |
+              ${{ runner.os }}-nuget-
+
+        - name: Build with dotnet 
+          run: dotnet build --configuration TestPublish
+          working-directory: "./MyFirstAzureWebApp" # added by BASHARAT
+
+          # - name: Test # added by BASHARAT
+          # run: dotnet test --no-build --verbosity normal # added by BASHARAT
+          # working-directory: "./FirstAzureAppTestProject" # added by BASHARAT
+
+        - name: dotnet publish
+          run: dotnet publish -c TestPublish -o ${{env.DOTNET_ROOT}}/myapp
+          working-directory: "./MyFirstAzureWebApp" # added by BASHARAT
+
+        - name: Upload artifact for deployment job
+          uses: actions/upload-artifact@v3
+          with:
+            name: .net-app
+            path: ${{env.DOTNET_ROOT}}/myapp
    
   deploy_STG:
       permissions:
         contents: none
       runs-on: ubuntu-latest
-      needs: deploy_TST
+      needs: build_STG
       environment:
         name: 'Staging'
         url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
