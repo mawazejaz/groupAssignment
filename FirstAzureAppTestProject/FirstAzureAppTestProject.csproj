@@ -10,10 +10,144 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" />
+    <Compile Include="obj\Debug\net6.0\FirstAzureAppTestProject.AssemblyInfo.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="bin\Debug\net6.0\appsettings.Development.json" />
+    <Content Include="bin\Debug\net6.0\appsettings.json" />
+    <Content Include="bin\Debug\net6.0\appsettings.ProductionPublish.json" />
+    <Content Include="bin\Debug\net6.0\appsettings.StagingPublish.json" />
+    <Content Include="bin\Debug\net6.0\appsettings.TestPublish.json" />
+    <Content Include="bin\Debug\net6.0\FirstAzureAppTestProject.deps.json" />
+    <Content Include="bin\Debug\net6.0\FirstAzureAppTestProject.runtimeconfig.json" />
+    <Content Include="bin\Debug\net6.0\MyFirstAzureWebApp.deps.json" />
+    <Content Include="bin\Debug\net6.0\MyFirstAzureWebApp.runtimeconfig.json" />
+    <Content Include="bin\Debug\net6.0\MyFirstAzureWebApp.staticwebassets.runtime.json" />
+    <Content Include="obj\Debug\net6.0\FirstAzureAppTestProject.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\FirstAzureAppTestProject.csproj.nuget.dgspec.json" />
+    <Content Include="obj\project.assets.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\net6.0\chromedriver.exe" />
+    <None Include="bin\Debug\net6.0\CoverletSourceRootsMapping" />
+    <None Include="bin\Debug\net6.0\cs\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <None Include="bin\Debug\net6.0\cs\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <None Include="bin\Debug\net6.0\cs\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <None Include="bin\Debug\net6.0\cs\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <None Include="bin\Debug\net6.0\cs\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <None Include="bin\Debug\net6.0\de\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <None Include="bin\Debug\net6.0\de\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <None Include="bin\Debug\net6.0\de\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <None Include="bin\Debug\net6.0\de\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <None Include="bin\Debug\net6.0\de\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <None Include="bin\Debug\net6.0\es\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <None Include="bin\Debug\net6.0\es\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <None Include="bin\Debug\net6.0\es\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <None Include="bin\Debug\net6.0\es\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <None Include="bin\Debug\net6.0\es\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <None Include="bin\Debug\net6.0\FirstAzureAppTestProject.dll" />
+    <None Include="bin\Debug\net6.0\FirstAzureAppTestProject.pdb" />
+    <None Include="bin\Debug\net6.0\fr\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <None Include="bin\Debug\net6.0\fr\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <None Include="bin\Debug\net6.0\fr\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <None Include="bin\Debug\net6.0\fr\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <None Include="bin\Debug\net6.0\fr\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <None Include="bin\Debug\net6.0\it\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <None Include="bin\Debug\net6.0\it\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <None Include="bin\Debug\net6.0\it\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <None Include="bin\Debug\net6.0\it\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <None Include="bin\Debug\net6.0\it\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <None Include="bin\Debug\net6.0\ja\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <None Include="bin\Debug\net6.0\ja\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <None Include="bin\Debug\net6.0\ja\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <None Include="bin\Debug\net6.0\ja\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <None Include="bin\Debug\net6.0\ja\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <None Include="bin\Debug\net6.0\ko\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <None Include="bin\Debug\net6.0\ko\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <None Include="bin\Debug\net6.0\ko\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <None Include="bin\Debug\net6.0\ko\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <None Include="bin\Debug\net6.0\ko\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <None Include="bin\Debug\net6.0\Microsoft.TestPlatform.AdapterUtilities.dll" />
+    <None Include="bin\Debug\net6.0\Microsoft.TestPlatform.CommunicationUtilities.dll" />
+    <None Include="bin\Debug\net6.0\Microsoft.TestPlatform.CoreUtilities.dll" />
+    <None Include="bin\Debug\net6.0\Microsoft.TestPlatform.CrossPlatEngine.dll" />
+    <None Include="bin\Debug\net6.0\Microsoft.TestPlatform.PlatformAbstractions.dll" />
+    <None Include="bin\Debug\net6.0\Microsoft.TestPlatform.Utilities.dll" />
+    <None Include="bin\Debug\net6.0\Microsoft.VisualStudio.CodeCoverage.Shim.dll" />
+    <None Include="bin\Debug\net6.0\Microsoft.VisualStudio.TestPlatform.Common.dll" />
+    <None Include="bin\Debug\net6.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll" />
+    <None Include="bin\Debug\net6.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll" />
+    <None Include="bin\Debug\net6.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll" />
+    <None Include="bin\Debug\net6.0\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll" />
+    <None Include="bin\Debug\net6.0\Microsoft.VisualStudio.TestPlatform.TestFramework.dll" />
+    <None Include="bin\Debug\net6.0\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll" />
+    <None Include="bin\Debug\net6.0\MyFirstAzureWebApp.dll" />
+    <None Include="bin\Debug\net6.0\MyFirstAzureWebApp.exe" />
+    <None Include="bin\Debug\net6.0\MyFirstAzureWebApp.pdb" />
+    <None Include="bin\Debug\net6.0\Newtonsoft.Json.dll" />
+    <None Include="bin\Debug\net6.0\NuGet.Frameworks.dll" />
+    <None Include="bin\Debug\net6.0\pl\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <None Include="bin\Debug\net6.0\pl\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <None Include="bin\Debug\net6.0\pl\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <None Include="bin\Debug\net6.0\pl\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <None Include="bin\Debug\net6.0\pl\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <None Include="bin\Debug\net6.0\pt-BR\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <None Include="bin\Debug\net6.0\pt-BR\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <None Include="bin\Debug\net6.0\pt-BR\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <None Include="bin\Debug\net6.0\pt-BR\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <None Include="bin\Debug\net6.0\pt-BR\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <None Include="bin\Debug\net6.0\ru\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <None Include="bin\Debug\net6.0\ru\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <None Include="bin\Debug\net6.0\ru\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <None Include="bin\Debug\net6.0\ru\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <None Include="bin\Debug\net6.0\ru\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <None Include="bin\Debug\net6.0\selenium-manager\linux\selenium-manager" />
+    <None Include="bin\Debug\net6.0\selenium-manager\macos\selenium-manager" />
+    <None Include="bin\Debug\net6.0\selenium-manager\windows\selenium-manager.exe" />
+    <None Include="bin\Debug\net6.0\testhost.dll" />
+    <None Include="bin\Debug\net6.0\testhost.exe" />
+    <None Include="bin\Debug\net6.0\tr\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <None Include="bin\Debug\net6.0\tr\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <None Include="bin\Debug\net6.0\tr\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <None Include="bin\Debug\net6.0\tr\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <None Include="bin\Debug\net6.0\tr\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <None Include="bin\Debug\net6.0\WebDriver.dll" />
+    <None Include="bin\Debug\net6.0\zh-Hans\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <None Include="bin\Debug\net6.0\zh-Hans\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <None Include="bin\Debug\net6.0\zh-Hans\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <None Include="bin\Debug\net6.0\zh-Hans\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <None Include="bin\Debug\net6.0\zh-Hans\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <None Include="bin\Debug\net6.0\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <None Include="bin\Debug\net6.0\zh-Hant\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <None Include="bin\Debug\net6.0\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <None Include="bin\Debug\net6.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <None Include="bin\Debug\net6.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <None Include="obj\Debug\net6.0\FirstAzureAppTestProject.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\net6.0\FirstAzureAppTestProject.assets.cache" />
+    <None Include="obj\Debug\net6.0\FirstAzureAppTestProject.csproj.AssemblyReference.cache" />
+    <None Include="obj\Debug\net6.0\FirstAzureAppTestProject.csproj.CopyComplete" />
+    <None Include="obj\Debug\net6.0\FirstAzureAppTestProject.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\net6.0\FirstAzureAppTestProject.dll" />
+    <None Include="obj\Debug\net6.0\FirstAzureAppTestProject.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="obj\Debug\net6.0\FirstAzureAppTestProject.genruntimeconfig.cache" />
+    <None Include="obj\Debug\net6.0\FirstAzureAppTestProject.pdb" />
+    <None Include="obj\Debug\net6.0\refint\FirstAzureAppTestProject.dll" />
+    <None Include="obj\Debug\net6.0\ref\FirstAzureAppTestProject.dll" />
+    <None Include="obj\FirstAzureAppTestProject.csproj.nuget.g.props" />
+    <None Include="obj\FirstAzureAppTestProject.csproj.nuget.g.targets" />
+    <None Include="obj\project.nuget.cache" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.11.0" />
     <PackageReference Include="MSTest.TestAdapter" Version="2.2.7" />
     <PackageReference Include="MSTest.TestFramework" Version="2.2.7" />
     <PackageReference Include="coverlet.collector" Version="3.1.0" />
+    <PackageReference Include="Selenium.WebDriver" Version="4.9.0" />
+    <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="112.0.5615.4900" />
   </ItemGroup>
 
   <ItemGroup>
