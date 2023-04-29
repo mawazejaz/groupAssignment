@@ -15,6 +15,7 @@ public class IndexModel : PageModel
         _configuration = configuration;
     }
 
+
     public void OnGet()
     {
         var environment = _configuration["BuildEnvironment:Name"];
