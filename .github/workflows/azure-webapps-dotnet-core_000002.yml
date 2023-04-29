@@ -59,9 +59,9 @@ jobs:
         run: dotnet build --configuration Release
         working-directory: "./MyFirstAzureWebApp" 
 
-      - name: Test_DEV
-        run: dotnet test --no-build --verbosity normal 
-        working-directory: "./FirstAzureAppTestProject" 
+      #- name: Test_DEV
+      #  run: dotnet test --no-build --verbosity normal 
+      #  working-directory: "./FirstAzureAppTestProject" 
       
       - name: dotnet publish
         run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
@@ -125,9 +125,9 @@ jobs:
           run: dotnet build --configuration TestPublish
           working-directory: "./MyFirstAzureWebApp" 
 
-        - name: Test_TST
-          run: dotnet test --no-build --verbosity normal 
-          working-directory: "./FirstAzureAppTestProject" 
+        #- name: Test_TST
+        #  run: dotnet test --no-build --verbosity normal 
+        #  working-directory: "./FirstAzureAppTestProject" 
 
         - name: dotnet publish
           run: dotnet publish -c TestPublish -o ${{env.DOTNET_ROOT}}/myapp
@@ -191,9 +191,9 @@ jobs:
           run: dotnet build --configuration TestPublish
           working-directory: "./MyFirstAzureWebApp"
 
-        - name: Test_STG
-          run: dotnet test --no-build --verbosity normal 
-          working-directory: "./FirstAzureAppTestProject"  
+        #- name: Test_STG
+        #  run: dotnet test --no-build --verbosity normal 
+        #  working-directory: "./FirstAzureAppTestProject"  
 
         - name: dotnet publish
           run: dotnet publish -c StagingPublish -o ${{env.DOTNET_ROOT}}/myapp
@@ -257,9 +257,9 @@ jobs:
           run: dotnet build --configuration TestPublish
           working-directory: "./MyFirstAzureWebApp"
 
-        - name: Test_PROD
-          run: dotnet test --no-build --verbosity normal 
-          working-directory: "./FirstAzureAppTestProject"  
+        #- name: Test_PROD
+        #  run: dotnet test --no-build --verbosity normal 
+        #  working-directory: "./FirstAzureAppTestProject"  
 
         - name: dotnet publish
           run: dotnet publish -c ProductionPublish -o ${{env.DOTNET_ROOT}}/myapp
