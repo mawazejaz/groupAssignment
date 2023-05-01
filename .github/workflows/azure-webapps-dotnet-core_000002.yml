@@ -23,7 +23,7 @@ env:
   AZURE_WEBAPP_NAME: mawaz    # Prod App Name
   AZURE_WEBAPP_NAME_Test: MyFirstAzureApp786    #Testing App Name
   AZURE_WEBAPP_NAME_STG: daudkiyani    #Staging App Name
-  AZURE_WEBAPP_NAME_DEV: finalprojectdevop    #Staging App Name
+  AZURE_WEBAPP_NAME_DEV: Qurat    #Staging App Name
   AZURE_WEBAPP_PACKAGE_PATH: '.'      # set this to the path to your web app project, defaults to the repository root
   DOTNET_VERSION: '6.0.*'                 # set this to the .NET Core version to use
 
